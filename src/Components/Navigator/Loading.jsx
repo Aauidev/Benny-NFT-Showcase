@@ -15,9 +15,9 @@ export default function Loading() {
           muted={true}
           playsInline={true}
           preload="auto"
-          poster={"/src/assets/Loading/Poster.jpg"}
+          poster={"/public/Poster.jpg"}
         >
-          <source src={"/src/assets/Loading/Loading.mp4"} type="video/mp4" />
+          <source src={"/public/Loading.mp4"} type="video/mp4" />
         </video>
         <h1 className={"text-white pl-0.5 mt-2 text-[18px]"}>Loading</h1>
       </div>

@@ -15,14 +15,14 @@ export default function Home({ loadState }) {
       className={"flex justify-center items-center relative h-screen w-screen"}
     >
       <img
-        src={"/src/assets/BackGrounds/DarkBackground.svg"}
+        src={"/public/DarkBackground.svg"}
         alt="DarkBackGround"
         className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
           isDark ? "opacity-100" : "opacity-0"
         }`}
       />
       <img
-        src={"/src/assets/BackGrounds/Background.svg"}
+        src={"/public/Background.svg"}
         alt="LightBackGround"
         className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
           isDark ? "opacity-0" : "opacity-100"
