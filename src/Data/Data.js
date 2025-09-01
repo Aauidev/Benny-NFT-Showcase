@@ -33,7 +33,7 @@ import aosLogo from "/src/assets/Logos/aos.svg"
 import swiperLogo from "/src/assets/Logos/swiper.svg";
 import tailwindLogo from "/src/assets/Logos/tailwind.svg";
 import blenderLogo from "/src/assets/Logos/blender.svg";
-import splineLogo from "/public/spline.svg";
+import splineLogo from "/spline.svg";
 
 export const Navbar = [
   {
