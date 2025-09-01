@@ -1,3 +1,5 @@
+import poster from "/Poster.jpg"
+import loading from "/Loading.mp4"
 export default function Loading() {
   return (
     <div
@@ -15,9 +17,9 @@ export default function Loading() {
           muted={true}
           playsInline={true}
           preload="auto"
-          poster={"/Poster.jpg"}
+          poster={poster}
         >
-          <source src={"/Loading.mp4"} type="video/mp4" />
+          <source src={loading} type="video/mp4" />
         </video>
         <h1 className={"text-white pl-0.5 mt-2 text-[18px]"}>Loading</h1>
       </div>
