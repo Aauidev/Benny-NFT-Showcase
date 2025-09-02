@@ -11,7 +11,7 @@ import Loading from "./Components/Navigator/Loading.jsx";
 
 function App() {
   const [pageLoaded, setPageLoaded] = useState(true);
-  const [splineLoaded, setSplineLoaded] = useState(true);
+  const [splineLoaded, setSplineLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
     if (pageLoaded && splineLoaded) {
       setTimeout(() => {
         setLoading(false);
-      }, 6000);
+      }, 2000);
     }
   }, [pageLoaded, splineLoaded]);
 

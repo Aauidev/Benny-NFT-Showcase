@@ -23,11 +23,13 @@ export default function CardFrame({
           <img
             src={backGroundImage}
             alt={title + " Back Ground"}
+            loading="lazy"
             className={"rounded-t-2xl"}
           />
           <img
             src={characterImage}
             alt={title}
+            loading="lazy"
             className={
               "absolute top-0 scale-155 drop-shadow-sm drop-shadow-black/75"
             }

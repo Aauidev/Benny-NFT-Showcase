@@ -45,6 +45,7 @@ export default function Gallery() {
           <img
             src={item.backGround}
             alt={item.name + "'s Background"}
+            loading="lazy"
             className={`absolute object-cover h-screen w-screen transition-all duration-500 will-change-transform z-0 ${
               activeIndex === item.id ? "opacity-100" : "opacity-0"
             } `}
