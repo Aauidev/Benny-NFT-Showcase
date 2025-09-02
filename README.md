@@ -21,16 +21,16 @@
 * Browse and select your favorite 3D models.
 * Interact with each model in real time.
 * For every selected model, quick-access icons appear:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌟Rarible
 <br>
-🌟Rarible
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌊OpenSea
 <br>
-🌊OpenSea
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌑X (Twitter)
 <br>
-🌑X (Twitter)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌈Instagram
 <br>
-🌈Instagram
-<br>
-Clicking an icon redirects you directly to the related link.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicking an icon redirects you directly to the related link.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; Footer Section:
 * 🏆Enter your email address in the provided field. Upon submission, you’ll receive an official Mr Benny Trophy via the official Benny email.
