@@ -28,7 +28,7 @@ function App() {
     if (pageLoaded && splineLoaded) {
       setTimeout(() => {
         setLoading(false);
-      }, 6000);
+      }, 5000);
     }
   }, [pageLoaded, splineLoaded]);
 
