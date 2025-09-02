@@ -11,7 +11,7 @@ import Loading from "./Components/Navigator/Loading.jsx";
 
 function App() {
   const [pageLoaded, setPageLoaded] = useState(false);
-  const [splineLoaded, setSplineLoaded] = useState(false);
+  const [splineLoaded, setSplineLoaded] = useState(true);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
