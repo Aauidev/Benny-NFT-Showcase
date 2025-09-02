@@ -33,7 +33,7 @@ const aosLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src
 const swiperLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/Logos/swiper.svg";
 const tailwindLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/Logos/tailwind.svg";
 const blenderLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/Logos/blender.svg";
-const splineLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/public/spline.svg";
+const splineLogo = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/Logos/spline.svg";
 
 export const Navbar = [
   {

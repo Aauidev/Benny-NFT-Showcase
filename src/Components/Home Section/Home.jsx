@@ -5,9 +5,6 @@ import ToggleButton from "./ToggleButton.jsx";
 import Spline from "@splinetool/react-spline";
 import LoadingIcon from "../Widgets/LoadingIcon.jsx";
 
-import DarkBackground from "/DarkBackground.svg"
-import LightBackground from "/BackGround.svg"
-
 export default function Home({ loadState }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const { isDark } = useTheme();
@@ -18,18 +15,18 @@ export default function Home({ loadState }) {
       className={"flex justify-center items-center relative h-screen w-screen"}
     >
       <img
-        src={DarkBackground}
+        src={"https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/DarkBackground.svg"}
         loading={"eager"}
         alt="DarkBackGround"
-        className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
+        className={`absolute h-screen w-screen object-cover object-center transition-opacity duration-500 ${
           isDark ? "opacity-100" : "opacity-0"
         }`}
       />
       <img
-        src={LightBackground}
+        src={"https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/LightBackground.svg"}
         loading={"eager"}
         alt="LightBackGround"
-        className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
+        className={`absolute h-screen w-screen object-cover object-center transition-opacity duration-500 ${
           isDark ? "opacity-0" : "opacity-100"
         }`}
       />
