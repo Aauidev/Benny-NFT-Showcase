@@ -18,7 +18,7 @@
 * On mobile devices, navigation between sections is done via the header navbar while staying on the Home section.
 * 
 ### &nbsp;&nbsp;&nbsp;&nbsp; Gallery Section:
-* Browse and select your favorite 3D models.
+* Browse and select your favorite NFT models.
 * Interact with each model in real time.
 * For every selected model, quick-access icons appear:
 
@@ -33,7 +33,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicking an icon redirects you directly to the related link.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp; Footer Section:
-* 🏆Enter your email address in the provided field. Upon submission, you’ll receive an official Mr Benny Trophy via the official Benny email.
+* 🏆Enter your email address in the provided field. Upon submission, you’ll receive an official Mr Benny Trophy via the official Mr Benny email.
 
 ## 🪅Tech Stack:
 * [React](https://react.dev/)
