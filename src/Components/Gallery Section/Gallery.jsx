@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Spline from "@splinetool/react-spline";
+import {useEffect, useRef, useState} from "react";
+import { Application } from "@splinetool/runtime";
 import CardFrame from "./CardFrame.jsx";
 import { Character } from "/src/Data/Data.js";
 import LoadingIcon from "../Widgets/LoadingIcon.jsx";
@@ -53,12 +53,6 @@ export default function Gallery() {
 
         <div className={"absolute inset-0"}>
           <div className={"relative h-full"}>
-            {mode === "obj" && (
-              <Spline
-                scene={item.splineAPI}
-                className={`absolute z-10 duration-500 transition-all origin-bottom will-change-transform ${activeIndex === item.id ? null : "opacity-0 scale-0"}`}
-              />
-            )}
             {mode === "name" && (
               <div className={"absolute -rotate-90 z-0"}>
                 <div
@@ -119,6 +113,63 @@ export default function Gallery() {
     ));
   }
 
+
+  function renderObj(){
+    const splineRef = useRef(null);
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+      if (splineRef.current) {
+        splineRef.current.dispose();
+        splineRef.current = null;
+      }
+
+      if (containerRef.current) {
+        const oldCanvas = containerRef.current.querySelector("canvas");
+        if (oldCanvas) {
+          const gl = oldCanvas.getContext("webgl2") || oldCanvas.getContext("webgl");
+          if (gl) gl.getExtension("WEBGL_lose_context")?.loseContext();
+
+          oldCanvas.remove();
+        }
+      }
+
+      const canvas = document.createElement("canvas");
+      canvas.className =
+        "absolute z-10 duration-500 transition-all origin-bottom will-change-auto w-full h-full";
+      containerRef.current.appendChild(canvas);
+
+      const splineInstance = new Application(canvas);
+      splineRef.current = splineInstance;
+
+      const sceneURL = Character[activeIndex]?.splineAPI || "";
+      splineInstance.load(sceneURL).catch((err) => console.error(err));
+
+      return () => {
+        if (splineRef.current) {
+          splineRef.current.dispose();
+          splineRef.current = null;
+        }
+        if (containerRef.current) {
+          const oldCanvas = containerRef.current.querySelector("canvas");
+          if (oldCanvas) {
+            const gl = oldCanvas.getContext("webgl2") || oldCanvas.getContext("webgl");
+            if (gl) gl.getExtension("WEBGL_lose_context")?.loseContext();
+
+            oldCanvas.remove();
+          }
+        }
+      };
+    }, [activeIndex]);
+
+    return (
+      <div
+        ref={containerRef}
+        className="relative w-full h-full z-30 scale-120 lg:scale-100 will-change-transform"
+      />
+    );
+  }
+
   return (
     <section id="gallery" className={"relative"}>
       <div className={"absolute h-screen w-screen"}>
@@ -140,7 +191,7 @@ export default function Gallery() {
               "relative w-full h-full z-30 scale-120 lg:scale-100 will-change-transform"
             }
           >
-            {renderCharacters("obj")}
+            {renderObj()}
           </div>
           <div
             className={
@@ -167,7 +218,7 @@ export default function Gallery() {
         <div className={"flex justify-center items-center"}>
           <div
             className={
-              "z-30 scale-45 sm:scale-75 md:scale-90 lg:scale-65 xl:scale-75 2xl:scale-85 3xl:scale-100 4xl:scale-125 5xl:scale-150"
+              "z-30 scale-45 sm:scale-75 md:scale-90 lg:scale-65 xl:scale-75 2xl:scale-85 3xl:scale-100 4xl:scale-125 5xl:scale-150 will-change-transform"
             }
           >
             {renderCardGroup(1, 4, " ")}
