@@ -10,7 +10,7 @@ import Footer from "./Components/Navigator/Footer.jsx";
 import Loading from "./Components/Navigator/Loading.jsx";
 
 function App() {
-  const [pageLoaded, setPageLoaded] = useState(true);
+  const [pageLoaded, setPageLoaded] = useState(false);
   const [splineLoaded, setSplineLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
 

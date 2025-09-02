@@ -92,7 +92,7 @@ export default function Footer() {
           className={`font-BebasNeue min-w-100 text-xl tracking-wide select-none transition-colors duration-500 ${isDark ? "text-white" : null}`}
         >
           Copyright<span className="font-Roboto">©</span> 2025{" "}
-          <span>Amin Asgari</span>. All rights reserved.
+          <span>Aauidev</span>. All rights reserved.
         </p>
       </div>
     </footer>
