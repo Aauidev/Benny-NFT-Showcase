@@ -10,7 +10,7 @@ import Footer from "./Components/Navigator/Footer.jsx";
 import Loading from "./Components/Navigator/Loading.jsx";
 
 function App() {
-  const [pageLoaded, setPageLoaded] = useState(false);
+  const [pageLoaded, setPageLoaded] = useState(true);
   const [splineLoaded, setSplineLoaded] = useState(true);
   const [loading, setLoading] = useState(true);
 
@@ -28,7 +28,7 @@ function App() {
     if (pageLoaded && splineLoaded) {
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 6000);
     }
   }, [pageLoaded, splineLoaded]);
 
