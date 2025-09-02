@@ -19,6 +19,7 @@ export default function Home({ loadState }) {
     >
       <img
         src={DarkBackground}
+        loading={"eager"}
         alt="DarkBackGround"
         className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
           isDark ? "opacity-100" : "opacity-0"
@@ -26,6 +27,7 @@ export default function Home({ loadState }) {
       />
       <img
         src={LightBackground}
+        loading={"eager"}
         alt="LightBackGround"
         className={`absolute h-screen w-screen object-cover transition-opacity duration-500 ${
           isDark ? "opacity-0" : "opacity-100"

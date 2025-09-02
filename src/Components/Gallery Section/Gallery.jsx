@@ -45,7 +45,6 @@ export default function Gallery() {
           <img
             src={item.backGround}
             alt={item.name + "'s Background"}
-            loading="lazy"
             className={`absolute object-cover h-screen w-screen transition-all duration-500 will-change-transform z-0 ${
               activeIndex === item.id ? "opacity-100" : "opacity-0"
             } `}
@@ -178,7 +177,7 @@ export default function Gallery() {
       </div>
       <div
         className={
-          "absolute w-screen h-screen bg-cover bg-center opacity-15 z-10 bg-[url(/src/assets/BackGrounds/Overlay%20Pattern5.svg)]"
+          "absolute w-screen h-screen bg-cover bg-center opacity-15 z-10 bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/Overlay%20Pattern5.svg)]"
         }
       />
       <div

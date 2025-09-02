@@ -46,7 +46,7 @@ export default function InstagramButton({
               borderColor: textColor,
               borderWidth: borderWidth || 0,
             }}
-            className={`absolute h-20 rounded-2xl overflow-hidden bg-[url(/src/assets/BackGrounds/InstaBack.jpg)] bg-size-[auto_100px] border-white cursor-pointer duration-500 transition-all will-change-transform ${isHovered ? "w-50" : "w-20"}`}
+            className={`absolute h-20 rounded-2xl overflow-hidden bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/InstaBack.jpg)] bg-size-[auto_100px] border-white cursor-pointer duration-500 transition-all will-change-transform ${isHovered ? "w-50" : "w-20"}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onTouchStart={() => setIsHovered(true)}

@@ -18,12 +18,12 @@ export default function Footer() {
       }
     >
       <div
-        className={`absolute bg-[url("/src/assets/BackGrounds/LightFooter.svg")] h-full w-screen bg-cover bg-center transition-opacity duration-500 z-0 ${
+        className={`absolute bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/LightFooter.svg)] h-full w-screen bg-cover bg-center transition-opacity duration-500 z-0 ${
           isDark ? "opacity-0" : null
         }`}
       />
       <div
-        className={`absolute bg-[url("/src/assets/BackGrounds/DarkFooter.svg")] h-full w-screen bg-cover bg-center transition-opacity duration-500 z-0 ${
+        className={`absolute bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/DarkFooter.svg)] h-full w-screen bg-cover bg-center transition-opacity duration-500 z-0 ${
           isDark ? null : "opacity-0"
         }`}
       />
