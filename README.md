@@ -16,7 +16,7 @@
 * On mobile and tablet, the model responds to tap and drag gestures.
 * A theme toggle button is available to switch between dark and light modes.
 * On mobile devices, navigation between sections is done via the header navbar while staying on the Home section.
-* 
+
 ### &nbsp;&nbsp;&nbsp;&nbsp; Gallery Section:
 * Browse and select your favorite NFT models.
 * Interact with each model in real time.
