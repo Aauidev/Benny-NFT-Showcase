@@ -8,13 +8,13 @@ export default function About() {
       className={`flex justify-center relative transition-colors duration-500 z-0 ${isDark ? "bg-[#030303]" : "bg-white"}`}
     >
       <div
-        className={`absolute bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/DarkStroke.svg)] h-full w-screen bg-cover transition-opacity duration-500 z-0 ${
-          isDark ? "opacity-65" : "opacity-0"
+        className={`absolute bg-[url(../src/assets/BackGrounds/DarkStroke.svg)] h-full w-screen bg-cover transition-opacity duration-500 z-0 ${
+          isDark ? "opacity-75" : "opacity-0"
         }`}
       />
       <div
-        className={`absolute bg-[url(https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/LightStroke.svg)] h-full w-screen bg-cover transition-opacity duration-500 z-0 ${
-          isDark ? "opacity-0" : "opacity-65"
+        className={`absolute bg-[url(../src/assets/BackGrounds/LightStroke.svg)] h-full w-screen bg-cover transition-opacity duration-500 z-0 ${
+          isDark ? "opacity-0" : "opacity-75"
         }`}
       />
       <article
