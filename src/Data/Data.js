@@ -14,7 +14,7 @@ const cardCharacterImage5 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showc
 const cardCharacterImage6 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/CardItems/6_CCI.png";
 const cardCharacterImage7 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/CardItems/7_CCI.png";
 
-const backGround0 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/0_BG.svg";
+import backGround0 from '../assets/BackGrounds/0_BG.svg';
 const backGround1 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/1_BG.svg";
 const backGround2 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/2_BG.svg";
 const backGround3 = "https://cdn.jsdelivr.net/gh/Aauidev/Benny-NFT-Showcase@main/src/assets/BackGrounds/3_BG.svg";
